@@ -10,7 +10,7 @@ defmodule Inmana.Welcomer do
     |> evaluate(age)
   end
 
-  defp evaluate("banana", "42") do
+  defp evaluate("banana", 42) do
     {:ok, "You are very special"}
   end
 
