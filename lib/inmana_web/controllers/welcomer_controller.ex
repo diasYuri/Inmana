@@ -1,6 +1,8 @@
 defmodule InmanaWeb.WelcomeController do
   use InmanaWeb, :controller
 
+  alias Inmana.Welcomer
+
   def index(conn, params) do
     params
     |> Welcomer.welcome()
